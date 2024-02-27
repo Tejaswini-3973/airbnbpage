@@ -11,6 +11,7 @@ const Location = () => {
                     <li><a className="dropdown-item" href="#">Pune</a></li>
                     <li><a className="dropdown-item" href="#">Mumbai</a></li>
                     <li><a className="dropdown-item" href="#">Kolhapur</a></li>
+                    <li><a className="dropdown-item" href="#">Nagpur</a></li>
                   </ul>
                 </li>
   );
