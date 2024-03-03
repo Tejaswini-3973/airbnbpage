@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Location = () => {
+const  Location = ({handleChange }) => {
+
+  const handleLocChange = (e) => {
+    handleChange( e);
+  }
+
   return (
-    
-    <li className="nav-item dropdown active">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownLocation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Location
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdownLocation">
-                    <li><a className="dropdown-item" href="#">Pune</a></li>
-                    <li><a className="dropdown-item" href="#">Mumbai</a></li>
-                    <li><a className="dropdown-item" href="#">Kolhapur</a></li>
-                    <li><a className="dropdown-item" href="#">Nagpur</a></li>
-                  </ul>
-                </li>
+    <div>
+      <select id="location" onChange={e => handleLocChange(e.target.value)} >
+          <option value="-1">Location</option>
+          <option selected="selected" value="Pune">Pune</option>
+          <option value="Kolhapur">Kolhapur</option>
+      </select>
+    </div>
   );
 }
 
