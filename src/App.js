@@ -13,7 +13,7 @@ function App() {
       guests : {
         adult: 0,
         children: 0,
-        infant: 0,
+        infants: 0,
         pets: false
       }
     };
