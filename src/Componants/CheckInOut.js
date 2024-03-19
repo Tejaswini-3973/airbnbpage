@@ -23,10 +23,10 @@ const CheckIn = () => {
     handleCheckIn(e);
   }
 
-  // const checkOut = ({handleClick}) => {
+  //  const checkOut = ({handleClick}) => {
   //   const handleClick = (e) => {
   //     handleClick( e);
-  // }
+  //  }
   return (
     <li className="nav-item dropdown active" onChange={e => handleCheckIn(e.target.value)}>
       <ul className="dropdown-menu" aria-labelledby="navbarDropdownCheckIn">
