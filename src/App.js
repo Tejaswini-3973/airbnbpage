@@ -18,17 +18,16 @@ function App() {
       }
     };
 
-    const [payload, setPayload] = useState(payload1);
+  const [payload, setPayload] = useState(payload1);
 
   const handlePayload = (data) => {
-    console.log("data", data);
     setPayload(data);
   }
 
   return (
     <div className="App background-image-dd-1">
       <header>
-        <Navbar handlePayload={handlePayload} payload={payload}/>
+        <Navbar handlePayload={handlePayload} setPayload={setPayload} payload={payload}/>
       </header>
 
       <div className="container mt-5">
@@ -37,9 +36,6 @@ function App() {
           <span style={{ backgroundColor: "white" }}> Explore nearby stays</span>
         </p>
       </div>
-
-     
-     
     </div>
   );
 }

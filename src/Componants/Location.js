@@ -1,20 +1,21 @@
 import React from 'react';
 
-const  Location = ({handleChange }) => {
-
+const Location = ({ handleChange }) => {
   const handleLocChange = (e) => {
-    handleChange( e);
-  }
+    handleChange(e.target.value); 
+  };
 
   return (
     <div>
-      <select id="location" onChange={e => handleLocChange(e.target.value)} >
-          <option value="-1">Location</option>
-          <option selected="selected" value="Pune">Pune</option>
-          <option value="Kolhapur">Kolhapur</option>
+      <select id="location" onChange={handleLocChange}>
+        <option selected>Location</option>
+        <option value="Pune">Pune</option>
+        <option value="Kolhapur">Kolhapur</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
       </select>
     </div>
   );
-}
+};
 
 export default Location;
