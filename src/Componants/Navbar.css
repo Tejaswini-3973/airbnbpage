@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #000000;
+    ; 
+    box-shadow: 0 4px px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+    
+    font-size: 24px; 
+    font-weight: bold; 
+
+  }
+  
+  .navbar-nav .nav-item {
+    color: #ffffff;
+    margin: 5px; 
+    box-sizing: border-box;
+
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    cursor: pointer; 
+    
+  }
+  
+  .nav-link:hover {
+    color: #007bff; 
+  }
+  
+  .navbar-toggler-icon {
+    color: #333; 
+  }
+  
+  .navbar-toggler {
+    border-color: #333; 
+  }
+  
+  
